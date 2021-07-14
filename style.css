@@ -1,0 +1,143 @@
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.intro{
+    background-color:rgb(127, 3, 209);
+    height:677px;
+    width:1440;
+}
+
+.cover{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 150px;
+
+}
+
+.moto{
+    padding-left: 150px;
+    font-size:55px;
+    width: 60%;
+    color: ivory;
+}
+.button{
+    text-decoration: none;
+    font-size: 20px;
+    color: lavenderblush;
+    height: 44px;
+    width: 168px;
+    background-color: rgb(230, 18, 124);
+    padding: 5px 5px 5px 5px;
+    border-radius: 4px;
+}
+main{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.photo img{
+    height:438px;
+    width:556px;
+}
+
+/*player section */
+
+
+.players-card{
+   
+    background-color: #f8e8e8;
+    width: 860px;
+     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.thambnail img{
+    height:230px;
+    width:364p ;
+    padding-left: 0px;
+}
+.blogs{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:25px;
+    grid-row-gap:35px
+}
+/*Final result*/
+.final-team{
+    background-color:#424040;
+    color: white;
+    padding:5px 5px 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+#final{
+    color: #DB7093;
+}
+#result{
+    color: #F4A460;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:20px ;
+    padding-left: 80px;
+    grid-row-gap:40px ;
+}
+
+.final-result{
+    background-color: #c9faf2;
+    width: 860px;
+     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.final-container{
+    background-color: #ffffff;
+    width: 400px;
+    height: 260px;
+    margin-top: 21px;
+    border-radius: 5px;
+
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.football{
+    padding-top: 40px;
+    font-style:inherit;
+    font-size: 30px;
+}
+.fa {
+    padding-left: 40px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .copyright{
+      padding-left:90px ;
+  }
+
+  /*responsive*/
+  @media only screen and (max-width:688px) {
+    .intro,.blogs
+    {
+        width: 100%;
+    }
+    .cover, .blogs{
+       background-color: rgb(121, 121, 253);
+       grid-template-columns: repeat(1,1fr);
+       
+    }
+    .cover, .blogs{
+     flex-direction: column;
+    }
+  
+       
+}
