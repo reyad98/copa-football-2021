@@ -4,8 +4,8 @@ body{
 
 .intro{
     background-color:rgb(127, 3, 209);
-    height:677px;
-    width:1440;
+    height:667x;
+    width:1448;
 }
 
 .cover{
@@ -123,21 +123,84 @@ main{
   .copyright{
       padding-left:90px ;
   }
+  .extra2{
+    background-color: #b0fca1;
+    width: 860px;
+     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+  }
+  .goal-leaders{
+                 display: grid;
+                 grid-template-columns: repeat(5,1fr);
+  }
+
+  .imgage img{
+      width: 120px;
+      height: 80px;
+  }
 
   /*responsive*/
-  @media only screen and (max-width:688px) {
-    .intro,.blogs
+  @media only screen and (max-width:688px)
+   {
+    .intro{
+        width: 110%;
+    }
+    .cover{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cover{
+        flex-direction: column;
+    }
+    
+   }
+
+@media only screen and (max-width:688px) {
+    .players-card
     {
         width: 100%;
     }
-    .cover, .blogs{
-       background-color: rgb(121, 121, 253);
+    .blogs
+    {
+       background-color: rgb(201, 201, 247);
        grid-template-columns: repeat(1,1fr);
        
     }
-    .cover, .blogs{
+    .blogs{
      flex-direction: column;
     }
-  
-       
+
+    @media only screen and (max-width:688px) {
+        .final-result
+        {
+            width: 100%;
+        }
+        .team
+        {
+           background-color: rgb(191, 191, 240);
+           grid-template-columns: repeat(1,1fr);
+           
+        }
+        .team{
+         flex-direction: column;
+        }
+    }
 }
+
+@media only screen and (max-width:688px) {
+    .extra2
+    {
+        width: 100%;
+    }
+    .goal-leaders
+    {
+       background-color: rgb(191, 191, 240);
+       grid-template-columns: repeat(1,1fr);
+       
+    }
+    .goal-leaders{
+     flex-direction: column;
+    }
+}
+
